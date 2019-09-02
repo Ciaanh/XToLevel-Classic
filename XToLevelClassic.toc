@@ -1,5 +1,5 @@
 ## Interface: 11302
-## Title: XToLevel
+## Title: XToLevelClassic
 ## Author: Ciaanh
 ## Version: 11302
 ## Notes: Shows mobs, quests, dungeons and battles needed until you reach your next level.
