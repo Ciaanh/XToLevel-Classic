@@ -26,8 +26,10 @@ XToLevel.AverageFrameAPI["Classic"] =
     Initialize = function(self)
         if XToLevel_AverageFrame_Classic ~= nil then
             self.window = XToLevel_AverageFrame_Classic
-            self.backdrop = self.window:GetBackdrop();
-            self:CreateLines()
+	    if self.backdrop ~= nil then
+                self.backdrop = self.window:GetBackdrop();
+            end
+	    self:CreateLines()
             self:Update()
             -- self.window:SetScript("OnEnter", function() self:ShowTooltip() end)
             -- self.window:SetScript("OnLeave", function() self:HideTooltip() end)
